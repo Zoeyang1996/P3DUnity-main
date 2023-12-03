@@ -154,7 +154,7 @@
             {
                 "type": "UnityEngine.ProBuilder.SelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.lastMeshSelectMode",
-                "value": "{\"m_Value\":8}"
+                "value": "{\"m_Value\":4}"
             },
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -184,7 +184,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
-                "value": "{\"m_Value\":{\"x\":-0.37990283966064455,\"y\":0.18203997611999513,\"z\":0.24439239501953126}}"
+                "value": "{\"m_Value\":{\"x\":-1.7907638549804688,\"y\":3.1136720180511476,\"z\":0.38709592819213869}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -254,7 +254,7 @@
             {
                 "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ExtrudeFaces.distance",
-                "value": "{\"m_Value\":0.5}"
+                "value": "{\"m_Value\":-0.10000000149011612}"
             },
             {
                 "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

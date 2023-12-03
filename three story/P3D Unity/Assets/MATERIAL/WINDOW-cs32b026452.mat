@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WINDOW
+  m_Name: WINDOW-cs32b026452
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -36,7 +36,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3007
+  m_CustomRenderQueue: 3031
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
@@ -201,11 +201,11 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
-    - _Metallic: 0.786
+    - _Metallic: 0.237
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 2.32
+    - _NormalScale: 3.82
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
@@ -218,7 +218,7 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.73
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -245,7 +245,7 @@ Material:
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 1
     - _TransparentDepthPrepassEnable: 1
-    - _TransparentSortPriority: 7
+    - _TransparentSortPriority: 31
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UVBase: 0
@@ -258,9 +258,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0.972549}
+    - _BaseColor: {r: 0.11672302, g: 0.35150632, b: 0.4056604, a: 0.972549}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0.972549}
+    - _Color: {r: 0.11672299, g: 0.3515063, b: 0.40566036, a: 0.972549}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
