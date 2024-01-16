@@ -7,7 +7,6 @@ public class GhostBlackController : MonoBehaviour
     private Animator animator;
     public bool Isvisible { get; private set;}
 
-
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -17,13 +16,13 @@ public class GhostBlackController : MonoBehaviour
     public void Appear()
     {
         Isvisible = true;
+        animator.SetBool("Isvisible", true);
     }
 
     public void Disappear()
     {
-        
         Isvisible = false;
+        animator.SetBool("Isvisible", false);
     }
-
 
 }

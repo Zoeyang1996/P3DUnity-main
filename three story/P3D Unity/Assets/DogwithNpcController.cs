@@ -6,25 +6,46 @@ public class DogwithNpcController : MonoBehaviour
 {
    public GameObject NpcBlack;
    public GameObject GhostBlack;
+   public GameObject pressFText; 
+   public GameObject pressGText;
+   private bool interactionComplete = false;
 
     // Update is called once per frame
+
+    private void Start()
+    {
+        pressFText.SetActive(false);
+        pressGText.SetActive(false);
+    
+    }
+
     private void Update()
     {
-        if (Vector3.Distance(transform.position, NpcBlack.transform.position)<2.0f)
+        if (!interactionComplete && Vector3.Distance(transform.position, NpcBlack.transform.position)<5.0f)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            pressFText.SetActive(true);
+
+            if (Input.GetKeyDown("f"))
             {
                 GhostBlack.GetComponent<GhostBlackController>().Appear();
+                pressFText.SetActive(false);
+                pressGText.SetActive(true);
             }
+        }
+            else 
+        {
+            pressFText.SetActive(false);
+            pressGText.SetActive(false);
+        }
 
-            if (Input.GetKeyDown(KeyCode.G)&& GhostBlack.GetComponent<GhostBlackController>().Isvisible)
+            if (Input.GetKeyDown("g")&& GhostBlack.GetComponent<GhostBlackController>().Isvisible)
             {
                 GhostBlack.GetComponent<GhostBlackController>().Disappear();
                 NpcBlack.GetComponent<NpcBlackController>().happy_dance();
+                pressGText.SetActive(false);
+                pressFText.SetActive(false);
+                interactionComplete = true;
             }
-        }
 
-    
-        
     }
 }

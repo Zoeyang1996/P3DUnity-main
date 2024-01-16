@@ -34,7 +34,7 @@ public class npcmovement : MonoBehaviour
         
         else
         {
-            if (animator.GetInteger("move") ! = 0)
+            if (animator.GetInteger("move") != 0)
             {
                 animator.SetInteger("move", 0);
                 animator.SetFloat("speed", 1);
