@@ -8,6 +8,7 @@ public class DogwithNpcController : MonoBehaviour
    public GameObject GhostBlack;
    public GameObject pressFText; 
    public GameObject pressGText;
+   
    private bool interactionComplete = false;
 
     // Update is called once per frame
@@ -16,6 +17,7 @@ public class DogwithNpcController : MonoBehaviour
     {
         pressFText.SetActive(false);
         pressGText.SetActive(false);
+        
     
     }
 
