@@ -8,6 +8,7 @@ public class DogwithNpcController : MonoBehaviour
    public GameObject GhostBlack;
    public GameObject pressFText; 
    public GameObject pressGText;
+ 
    
    private bool interactionComplete = false;
 
