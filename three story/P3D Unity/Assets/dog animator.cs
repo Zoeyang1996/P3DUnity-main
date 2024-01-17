@@ -5,13 +5,17 @@ using UnityEngine;
 public class dogmove : MonoBehaviour
 {
     Animator animator;
-    [SerializeField] private float speed = 2.0f;
-    [SerializeField] private float turnSpeed = 20.0f;
+    Rigidbody rb;
+    public float speed = 2.0f;
+    public float turnSpeed = 20.0f;
+
+    public float jumpForce = 5f;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -54,6 +58,15 @@ public class dogmove : MonoBehaviour
         {
             animator.SetBool("isRight", false);
 
+        }
+
+         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Set the Jump trigger on the Animator to start the jump animation
+            animator.SetTrigger("Jump");
+
+            // Add a vertical force to the Rigidbody to perform the jump
+            transform.Translate(Vector3.up * jumpForce);
         }
 
     }
